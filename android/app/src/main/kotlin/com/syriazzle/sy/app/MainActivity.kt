@@ -1,4 +1,4 @@
-package com.example.syriazzle_app
+package com.syriazzle.sy.app
 
 import io.flutter.embedding.android.FlutterActivity
 
