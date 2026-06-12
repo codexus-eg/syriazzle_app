@@ -5,7 +5,6 @@ workflows:
     instance_type: mac_mini_m2
 
     integrations:
-      # تم إرجاع الاسم القديم بناءً على الإعدادات المحفوظة عندك
       app_store_connect: noourway
 
     environment:
@@ -13,9 +12,8 @@ workflows:
       xcode: latest
       cocoapods: default
 
+      # هنا خلينا التوقيع اليدوي فقط ومسحنا الأوتوماتيك
       ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.syriazzle.codexus.app
         provisioning_profiles:
           - Syriazzle_Manual_Profile
         certificates:
