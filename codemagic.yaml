@@ -12,12 +12,12 @@ workflows:
       xcode: latest
       cocoapods: default
 
-      # هنا خلينا التوقيع اليدوي فقط ومسحنا الأوتوماتيك
       ios_signing:
         provisioning_profiles:
           - Syriazzle_Manual_Profile
         certificates:
-          - ios_certificate.p12
+          # تم التعديل للاسم المتاح في كود ماجيك
+          - ios_cert_manual
 
     scripts:
       - name: Clean and Get Dependencies
